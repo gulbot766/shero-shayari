@@ -3,164 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>علامہ اقبال کی شاعری</title>
+  <title>علامہ اقبال کی موضوعاتی شاعری</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Noto Nastaliq Urdu', serif;
-      background: #e0f7fa;
+      background: #f3f8f9;
       margin: 0;
       padding: 20px;
-      text-align: center;
     }
 
     h1 {
+      text-align: center;
       color: #004d40;
-      margin-top: 20px;
-      font-size: 2.5rem;
+      margin-top: 10px;
     }
 
-    .poet-image {
-      width: 180px;
-      border-radius: 50%;
-      margin: 20px auto;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    .topic-title {
+      background: linear-gradient(to left, #80d0c7, #13547a);
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.8rem;
+      margin: 40px 0 20px;
+      text-align: center;
     }
 
     .shayari {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 25px;
-      margin: 20px auto;
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px auto;
       font-size: 20px;
       line-height: 2;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 700px;
+      max-width: 750px;
       position: relative;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     .copy-btn {
       position: absolute;
       top: 10px;
       left: 10px;
-      background: #00acc1;
+      background: #00796b;
       color: white;
       border: none;
       padding: 5px 10px;
       border-radius: 20px;
-      cursor: pointer;
       font-size: 0.9rem;
+      cursor: pointer;
     }
 
     .copy-btn:hover {
-      background: #00838f;
+      background: #004d40;
     }
 
     .back-btn {
-      margin-top: 30px;
-      padding: 12px 25px;
-      font-size: 1rem;
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      color: #fff;
+      display: block;
+      margin: 50px auto 20px;
+      padding: 12px 30px;
+      background: #007bff;
+      color: white;
       border: none;
+      font-size: 1rem;
       border-radius: 30px;
       cursor: pointer;
-      transition: background 0.3s ease;
     }
 
     .back-btn:hover {
-      background: linear-gradient(to right, #0072ff, #00c6ff);
+      background: #0056b3;
     }
   </style>
 </head>
 <body>
 
-  <h1>🌟 علامہ اقبال کی شاعری</h1>
+  <h1>🌟 علامہ اقبال کی موضوعاتی شاعری</h1>
 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Allama_Iqbal.jpg/330px-Allama_Iqbal.jpg" alt="Allama Iqbal" class="poet-image">
+  <!-- خودی -->
+  <div class="topic-title">✨ خودی</div>
 
-  <div class="shayari" id="s1">
-    خودی کو کر بلند اتنا کہ ہر تقدیر سے پہلے<br>
-    خدا بندے سے خود پوچھے، بتا تیری رضا کیا ہے؟
-    <button class="copy-btn" onclick="copyShayari('s1')">📋 Copy</button>
-  </div>
+  <div class="shayari" id="s1">خودی کو کر بلند اتنا کہ ہر تقدیر سے پہلے<br>خدا بندے سے خود پوچھے، بتا تیری رضا کیا ہے؟<button class="copy-btn" onclick="copyShayari('s1')">📋</button></div>
 
-  <div class="shayari" id="s2">
-    ستاروں سے آگے جہاں اور بھی ہیں<br>
-    ابھی عشق کے امتحان اور بھی ہیں
-    <button class="copy-btn" onclick="copyShayari('s2')">📋 Copy</button>
-  </div>
+  <div class="shayari" id="s2">خودی کا سر نہاں لا الہ الا اللہ<br>خودی ہے تیغ، فساں لا الہ الا اللہ<button class="copy-btn" onclick="copyShayari('s2')">📋</button></div>
 
-  <div class="shayari" id="s3">
-    نہیں ہے نا امید اقبال اپنی کشت ویراں سے<br>
-    ذرا نم ہو تو یہ مٹی بڑی زرخیز ہے ساقی
-    <button class="copy-btn" onclick="copyShayari('s3')">📋 Copy</button>
-  </div>
+  <div class="shayari" id="s3">خودی میں ڈوب جا اے میرِ کارواں! کہ تو<br>ز خود شناسیٔ مسلم کا راز داں ہو جائے<button class="copy-btn" onclick="copyShayari('s3')">📋</button></div>
 
-  <div class="shayari" id="s4">
-    عمل سے زندگی بنتی ہے جنت بھی، جہنم بھی<br>
-    یہ خاکی اپنی فطرت میں نہ نوری ہے نہ ناری ہے
-    <button class="copy-btn" onclick="copyShayari('s4')">📋 Copy</button>
-  </div>
+  <!-- عشق و محبت -->
+  <div class="topic-title">❤️ عشق و محبت</div>
 
-  <div class="shayari" id="s5">
-    زمانہ بڑے شوق سے سن رہا تھا<br>
-    ہم ہی سو گئے داستاں کہتے کہتے
-    <button class="copy-btn" onclick="copyShayari('s5')">📋 Copy</button>
-  </div>
+  <div class="shayari" id="s4">محبت مجھے ان جوانوں سے ہے<br>ستاروں پہ جو ڈالتے ہیں کمند<button class="copy-btn" onclick="copyShayari('s4')">📋</button></div>
 
-  <div class="shayari" id="s6">
-    سبق پھر پڑھ صداقت کا، عدالت کا، شجاعت کا<br>
-    لیا جائے گا تجھ سے کام دنیا کی امامت کا
-    <button class="copy-btn" onclick="copyShayari('s6')">📋 Copy</button>
-  </div>
+  <div class="shayari" id="s5">یہی مقصود فطرت ہے، یہی رمز مسلمانی<br>اخوت کی جہانگیری، محبت کی فراوانی<button class="copy-btn" onclick="copyShayari('s5')">📋</button></div>
 
-  <div class="shayari" id="s7">
-    اٹھ کہ اب بزمِ جہاں کا اور ہی انداز ہے<br>
-    مشرق و مغرب میں تیرے دور کا آغاز ہے
-    <button class="copy-btn" onclick="copyShayari('s7')">📋 Copy</button>
-  </div>
+  <!-- قوم و ملت -->
+  <div class="topic-title">🌍 قوم و ملت</div>
 
-  <div class="shayari" id="s8">
-    نگاہ بلند، سخن دلنواز، جاں پرسوز<br>
-    یہی ہے رختِ سفر میرِ کارواں کے لیے
-    <button class="copy-btn" onclick="copyShayari('s8')">📋 Copy</button>
-  </div>
+  <div class="shayari" id="s6">افراد کے ہاتھوں میں ہے اقوام کی تقدیر<br>ہر فرد ہے ملت کے مقدر کا ستارہ<button class="copy-btn" onclick="copyShayari('s6')">📋</button></div>
 
-  <div class="shayari" id="s9">
-    وجودِ زن سے ہے تصویرِ کائنات میں رنگ<br>
-    اسی کے ساز سے ہے زندگی کا سوزِ دروں
-    <button class="copy-btn" onclick="copyShayari('s9')">📋 Copy</button>
-  </div>
+  <div class="shayari" id="s7">سبق پھر پڑھ صداقت کا، عدالت کا، شجاعت کا<br>لیا جائے گا تجھ سے کام دنیا کی امامت کا<button class="copy-btn" onclick="copyShayari('s7')">📋</button></div>
 
-  <div class="shayari" id="s10">
-    محبت مجھے ان جوانوں سے ہے<br>
-    ستاروں پہ جو ڈالتے ہیں کمند
-    <button class="copy-btn" onclick="copyShayari('s10')">📋 Copy</button>
-  </div>
+  <div class="shayari" id="s8">کبھی اے نوجواں مسلم! تدبر بھی کیا تو نے<br>وہ کیا گردوں تھا، تو جس کا ہے اک ٹوٹا ہوا تارا؟<button class="copy-btn" onclick="copyShayari('s8')">📋</button></div>
 
-  <div class="shayari" id="s11">
-    افراد کے ہاتھوں میں ہے اقوام کی تقدیر<br>
-    ہر فرد ہے ملت کے مقدر کا ستارہ
-    <button class="copy-btn" onclick="copyShayari('s11')">📋 Copy</button>
-  </div>
+  <!-- علم و تعلیم -->
+  <div class="topic-title">📚 علم و تعلیم</div>
 
-  <div class="shayari" id="s12">
-    یقین، محکم، عمل پیہم، محبت فاتحِ عالم<br>
-    جہادِ زندگانی میں ہیں یہ مردوں کی شمشیریں
-    <button class="copy-btn" onclick="copyShayari('s12')">📋 Copy</button>
-  </div>
+  <div class="shayari" id="s9">علم کی حد سے باہر ہیں باتیں<br>علم ہے عقل، عشق ہے یقین<button class="copy-btn" onclick="copyShayari('s9')">📋</button></div>
 
-  <button class="back-btn" onclick="location.href='shayari.html'">🔙 واپس شاعر کے انتخاب پر</button>
+  <div class="shayari" id="s10">نہ تھا اگر تو شریکِ سفر تو کیا غم ہے<br>کہ خونِ دل میں ڈبولی ہیں میں نے انگلیاں<button class="copy-btn" onclick="copyShayari('s10')">📋</button></div>
+
+  <!-- عمل و زندگی -->
+  <div class="topic-title">🔥 عمل و زندگی</div>
+
+  <div class="shayari" id="s11">عمل سے زندگی بنتی ہے جنت بھی، جہنم بھی<br>یہ خاکی اپنی فطرت میں نہ نوری ہے نہ ناری ہے<button class="copy-btn" onclick="copyShayari('s11')">📋</button></div>
+
+  <div class="shayari" id="s12">یقیں، محکم، عمل پیہم، محبت فاتحِ عالم<br>جہادِ زندگانی میں ہیں یہ مردوں کی شمشیریں<button class="copy-btn" onclick="copyShayari('s12')">📋</button></div>
+
+  <div class="shayari" id="s13">نگاہ بلند، سخن دلنواز، جاں پرسوز<br>یہی ہے رختِ سفر میرِ کارواں کے لیے<button class="copy-btn" onclick="copyShayari('s13')">📋</button></div>
+
+  <!-- وطن و بیداری -->
+  <div class="topic-title">🇵🇰 وطن و بیداری</div>
+
+  <div class="shayari" id="s14">اٹھ کہ اب بزمِ جہاں کا اور ہی انداز ہے<br>مشرق و مغرب میں تیرے دور کا آغاز ہے<button class="copy-btn" onclick="copyShayari('s14')">📋</button></div>
+
+  <div class="shayari" id="s15">خودی کے راز داں پیدا نہ ہوں گے<br>فقط پیدا کریں گے گفت و گو سے<button class="copy-btn" onclick="copyShayari('s15')">📋</button></div>
+
+  <div class="shayari" id="s16">نہیں ہے نا امید اقبال اپنی کشت ویراں سے<br>ذرا نم ہو تو یہ مٹی بڑی زرخیز ہے ساقی<button class="copy-btn" onclick="copyShayari('s16')">📋</button></div>
+
+  <button class="back-btn" onclick="location.href='shayari.html'">🔙 واپس شاعر منتخب کریں</button>
 
   <script>
     function copyShayari(id) {
-      const shayariText = document.getElementById(id).innerText.replace("📋 Copy", "").trim();
-      navigator.clipboard.writeText(shayariText).then(() => {
-        alert("شعر Copy ہو گیا 📋");
+      const shayari = document.getElementById(id).innerText.replace("📋", "").trim();
+      navigator.clipboard.writeText(shayari).then(() => {
+        alert("شعر Copy ہو گیا!");
       });
     }
   </script>
-
 </body>
-                               </html>
+                                                                                                                                                                                  </html>
