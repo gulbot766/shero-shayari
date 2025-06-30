@@ -2,12 +2,17 @@
 <html lang="ur" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shayari Start Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Noto Nastaliq Urdu', serif;
       background: linear-gradient(145deg, #ffdde1, #ee9ca7);
       color: #fff;
@@ -16,25 +21,27 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      perspective: 1000px;
+      text-align: center;
+      padding: 20px;
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 8vw;
       text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
       transform: rotateX(10deg);
     }
 
     p {
-      font-size: 1.5rem;
-      margin-top: 10px;
+      font-size: 4.5vw;
+      margin-top: 15px;
       opacity: 0.9;
     }
 
     .start-btn {
-      margin-top: 30px;
-      padding: 15px 30px;
-      font-size: 1.2rem;
+      margin-top: 40px;
+      padding: 12px 24px;
+      font-size: 4vw;
+      max-width: 80%;
       background: linear-gradient(to right, #ff416c, #ff4b2b);
       color: white;
       border: none;
@@ -47,6 +54,12 @@
     .start-btn:hover {
       transform: scale(1.1) rotateX(5deg);
       background: linear-gradient(to right, #ff4b2b, #ff416c);
+    }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 3.5rem; }
+      p { font-size: 1.5rem; }
+      .start-btn { font-size: 1.2rem; }
     }
   </style>
 </head>
